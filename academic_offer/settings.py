@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 
+import django_heroku
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -86,11 +88,6 @@ WSGI_APPLICATION = 'academic_offer.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'school',
-        'USER': '215527145',
-        'PASSWORD':'Skull.Sw0rd',
-        'HOST': 'localhost',
-        'PORT': '3306',
     }
 }
 
@@ -150,3 +147,5 @@ SIMPLE_JWT = {
 # Don't append slash to routes
 
 APPEND_SLASH = False
+
+django_heroku.settings(locals())
