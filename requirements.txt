@@ -1,7 +1,7 @@
 asgiref==3.2.3
 bson==0.5.8
 dataclasses==0.6
-Django==3.0.4
+Django==3.0.7
 django-cleanup==4.0.0
 django-filter==2.2.0
 djangorestframework==3.11.0
